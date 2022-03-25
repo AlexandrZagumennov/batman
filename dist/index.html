@@ -58,22 +58,26 @@
 	
 				<div class="header__mute mute">
 					<input type="checkbox" class="mute__input" id="mute">
-					<label for="mute" class="mute__label">mute</label>
+					<label for="mute" class="mute__label"></label>
 				</div>
 			</nav>
 
 	</header>
 
-	<main class="main">
-		<img class="main__logo" src="img/main/logo.png" alt="Логотип" width="329" height="235">
+	<main class="main main_index">
+		<picture>
+			<source srcset = "img/main/logo.avif" type="image/avif">
+			<source srcset = "img/main/logo.webp" type="image/webp">
+			<img class="main__logo" src="img/main/logo.png" alt="Логотип" width="329" height="235">
+		</picture>
 	</main>
 
 	<footer class="footer">
 		<ul class="footer__links">
-			<li><a href="" class="footer__links">Политика конфиденциальности</a></li>
-			<li><a href="" class="footer__links">Условия эксплуатации</a></li>
-			<li><a href="" class="footer__links">Выбор объявлений</a></li>
-			<li><a href="" class="footer__links">Настройки файлов cookie</a></li>
+			<li><a href="" class="footer__link">Политика конфиденциальности</a></li>
+			<li><a href="" class="footer__link">Условия эксплуатации</a></li>
+			<li><a href="" class="footer__link">Выбор объявлений</a></li>
+			<li><a href="" class="footer__link">Настройки файлов cookie</a></li>
 		</ul>
 
 		<p class="footer__copywright">© 2022 WBEI TM & © DC</p>

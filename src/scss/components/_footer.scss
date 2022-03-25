@@ -1,0 +1,19 @@
+.footer {
+	padding: 10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 6px;
+}
+
+.footer__links {
+	display: flex;
+	align-items: center;
+	gap: 21px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.footer__copywright {
+	color: $color-6;
+}
