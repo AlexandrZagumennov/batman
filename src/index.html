@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Batman 2022</title>
+
+	<!--<link rel="icon" type="image/svg+xml" href="img/favicon.png">-->
+
+	<link rel="preload" href="fonts/Roboto/Roboto-400.woff2" as="font" type="font/woff2"
+		crossorigin>
+	<link rel="preload" href="fonts/Roboto/Roboto-500.woff2" as="font" type="font/woff2"
+		crossorigin>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			}
+			createLink('css/index.min.css');
+		})
+	</script>
+
+	<script defer src="js/index.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav class="header__navigation navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item"><a class="navigation__link">Главная</a></li>
+				<li class="navigation__item"><a href="video.html" class="navigation__link"></a>Видео</li>
+				<li class="navigation__item"><a href="photo.html" class="navigation__link"></a>Фото</li>
+			</ul>
+
+			<p class="header__hashtag">#TheBatman</p>
+
+			<ul class="header__social social">
+				<li class="social__item"><a href="#" class="social__link">1</a></li>
+				<li class="social__item"><a href="#" class="social__link">2</a></li>
+				<li class="social__item"><a href="#" class="social__link">3</a></li>
+			</ul>
+
+			<div class="header__mute mute">
+				<input type="checkbox" class="mute__input" id="mute">
+				<label for="mute" class="mute__label">mute</label>
+			</div>
+		</nav>
+
+	</header>
+
+	<main class="main">
+		<img class="main__logo" src="img/main/logo.png" alt="Логотип" width="329" height="235">
+	</main>
+
+	<footer class="footer">
+		<ul class="footer__links">
+			<li><a href="" class="footer__links">Политика конфиденциальности</a></li>
+			<li><a href="" class="footer__links">Условия эксплуатации</a></li>
+			<li><a href="" class="footer__links">Выбор объявлений</a></li>
+			<li><a href="" class="footer__links">Настройки файлов cookie</a></li>
+		</ul>
+
+		<p class="footer__copywright">© 2022 WBEI TM & © DC</p>
+	</footer>
+
+	
+</body>
+</html>	
