@@ -33,3 +33,55 @@
 .navigation__close {
 	display: none;
 }
+
+@media (max-width: 768px) {
+	.navigation {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 240px;
+		transform: translateX(-240px);
+		background-color: $color-2;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 90px;
+		text-align: center;
+		align-items: stretch;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.navigation_active {
+		transform: translateX(0);
+	}
+
+	.navigation__list {
+		flex-direction: column;
+		margin-right: 0;
+		gap: 6px;
+		margin-bottom: 6px;
+	}
+
+	.navigation__link {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.header__hashtag {
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.navigation__close {
+		position: absolute;
+		display: block;
+		top: 20px;
+		left: 20px;
+		width: 16px;
+		height: 16px;
+		border: none;
+		background-color: transparent;
+		@include bg-full('../img/sprite.svg#close');
+		
+	}
+}

@@ -17,3 +17,19 @@
 .footer__copywright {
 	color: $color-6;
 }
+
+
+@media (max-width: 768px) {
+	.footer {
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 580px) {
+	.footer {
+		font-size: 6px;
+		line-height: 7px;
+	}
+}

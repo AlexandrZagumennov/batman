@@ -1,3 +1,15 @@
 .burger {
 	display: none;
 }
+
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+		width: 20px;
+		height: 12px;
+		background-color: transparent;
+		@include bg-full('../img/sprite.svg#menu');
+		border: none;
+		z-index: 2;
+	}
+}
