@@ -4,6 +4,9 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 6px;
+	position: relative;
+	z-index: 500;
+	height: 70px;
 }
 
 .footer__links {
@@ -31,5 +34,6 @@
 	.footer {
 		font-size: 6px;
 		line-height: 7px;
+		height: 50px;
 	}
 }

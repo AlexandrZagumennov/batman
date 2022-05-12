@@ -1,5 +1,6 @@
 .main {
 	flex-grow: 1;
+	position: relative;
 }
 
 .main_index {
@@ -41,10 +42,13 @@
 	}
 }
 
-.main__logo {
-	@media (max-width: 768px) {
-		width: 230px;
 
+@media (max-width: 768px) {
+	.main__logo {
+		width: 230px;
+	}
+
+	.main_slider {
 	}
 }
 

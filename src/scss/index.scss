@@ -5,6 +5,8 @@
 @import 'components/global';
 @import 'components/fonts';
 
+@import 'libs/swiper-bundle.min';
+
 /* Подключение стилей блоков */
 @import 'components/header';
 @import 'components/navigation';
@@ -12,5 +14,8 @@
 @import 'components/social';
 @import 'components/mute';
 @import 'components/main';
+@import 'components/slider-main';
+@import 'components/slider-thumbs';
+@import 'components/pagination';
 @import 'components/footer';
 

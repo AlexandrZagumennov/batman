@@ -58,11 +58,11 @@ const path = {
 		html: 'src/*.html',
 		pug: 'src/pug/*.pug',
 		scss: 'src/scss/**/*.scss',
-		js: 'src/**/*.js',
+		js: ['src/js/libs/swiper-bundle.min.js', 'src/**/*.js'],
 		img: 'src/img/**/*.*',
 		svg: 'src/svg/**/*.svg',
 		imgF: 'src/img/**/*.{jpg,jpeg,png}',
-		assets: ['src/fonts/**/*.*', ]
+		assets: ['src/fonts/**/*.*', 'src/video/**/*.*', 'src/photo/**/*.*',]
 	},
 	watch: {
 		html: 'src/*.html',
@@ -151,7 +151,7 @@ const webpackConf = {
 
 if (!dev) {
 	webpackConf.module.rules.push({
-		test: /\.m?js$/,
+		test: /\.(js)$/,
 		exclude: /(node_modules)/,
 		loader: 'babel-loader'
 	});
