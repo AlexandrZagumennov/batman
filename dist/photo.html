@@ -13,17 +13,7 @@
 	<link rel="preload" href="fonts/Roboto/Roboto-500.woff2" as="font" type="font/woff2"
 		crossorigin>
 
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const createLink = url => {
-				const link = document.createElement('link');
-				link.rel = 'stylesheet';
-				link.href = url;
-				document.head.append(link);
-			}
-			createLink('css/index.min.css');
-		})
-	</script>
+	<link rel="stylesheet" href="css/index.min.css">
 
 	<script defer src="js/index.min.js"></script>
 </head>
@@ -68,15 +58,27 @@
 		<div class="slider-main swiper">
 			<ul class="slider-main__list swiper-wrapper">
 				<li class="slider-main__item swiper-slide">
-					<img src="photo/photo01.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					<picture>
+						<source srcset = "img/photo/photo01.avif" type="image/avif">
+						<source srcset = "img/photo/photo01.webp" type="image/webp">
+						<img src="img/photo/photo01.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					</picture>
 				</li>
 
 				<li class="slider-main__item swiper-slide">
-					<img src="photo/photo02.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					<picture>
+						<source srcset = "img/photo/photo02.avif" type="image/avif">
+						<source srcset = "img/photo/photo02.webp" type="image/webp">
+						<img src="img/photo/photo02.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					</picture>
 				</li>
 
 				<li class="slider-main__item swiper-slide">
-					<img src="photo/photo03.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					<picture>
+						<source srcset = "img/photo/photo03.avif" type="image/avif">
+						<source srcset = "img/photo/photo03.webp" type="image/webp">
+						<img src="img/photo/photo03.jpg" alt="фото" class="slider-main__img" width="1440" height="682">
+					</picture>
 				</li>
 			</ul>
 		</div>
@@ -86,15 +88,27 @@
 			<div class="slider-thumbs swiper">
 				<ul class="slider-thumbs__list swiper-wrapper">
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="photo/photo01-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/photo/photo01-thumbs.avif" type="image/avif">
+							<source srcset = "img/photo/photo01-thumbs.webp" type="image/webp">
+							<img src="img/photo/photo01-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="photo/photo02-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/photo/photo02-thumbs.avif" type="image/avif">
+							<source srcset = "img/photo/photo02-thumbs.webp" type="image/webp">
+							<img src="img/photo/photo02-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="photo/photo03-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/photo/photo03-thumbs.avif" type="image/avif">
+							<source srcset = "img/photo/photo03-thumbs.webp" type="image/webp">
+							<img src="img/photo/photo03-thumbs.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 				</ul>

@@ -13,17 +13,7 @@
 	<link rel="preload" href="fonts/Roboto/Roboto-500.woff2" as="font" type="font/woff2"
 		crossorigin>
 
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const createLink = url => {
-				const link = document.createElement('link');
-				link.rel = 'stylesheet';
-				link.href = url;
-				document.head.append(link);
-			}
-			createLink('css/index.min.css');
-		})
-	</script>
+	<link rel="stylesheet" href="css/index.min.css">
 
 	<script defer src="js/index.min.js"></script>
 </head>
@@ -119,33 +109,60 @@
 			<div class="slider-thumbs swiper">
 				<ul class="slider-thumbs__list swiper-wrapper">
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/trailer01.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/trailer01.avif" type="image/avif">
+							<source srcset = "img/video/trailer01.webp" type="image/webp">
+							<img src="img/video/trailer01.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/trailer02.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/trailer02.avif" type="image/avif">
+							<source srcset = "img/video/trailer02.webp" type="image/webp">
+							<img src="img/video/trailer02.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/trailer03.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/trailer03.avif" type="image/avif">
+							<source srcset = "img/video/trailer03.webp" type="image/webp">
+							<img src="img/video/trailer03.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/tizer01.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/tizer01.avif" type="image/avif">
+							<source srcset = "img/video/tizer01.webp" type="image/webp">
+							<img src="img/video/tizer01.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/tizer02.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/tizer02.avif" type="image/avif">
+							<source srcset = "img/video/tizer02.webp" type="image/webp">
+							<img src="img/video/tizer02.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/tizer03.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/tizer03.avif" type="image/avif">
+							<source srcset = "img/video/tizer03.webp" type="image/webp">
+							<img src="img/video/tizer03.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
 
 					<li class="slider-thumbs__item swiper-slide">
-						<img src="video/tizer04.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						<picture>
+							<source srcset = "img/video/tizer04.avif" type="image/avif">
+							<source srcset = "img/video/tizer04.webp" type="image/webp">
+							<img src="img/video/tizer04.jpg" alt="фото" class="slider-thumbs__img" width="260" height="100">
+						</picture>
 					</li>
-
 				</ul>
 			</div>
 		</div>
