@@ -6,6 +6,7 @@
 	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.02em;
+	z-index: 600;
 }
 
 .navigation__list {
@@ -15,20 +16,21 @@
 	text-transform: uppercase;
 }
 
-.navigation__item {
-
-}
-
 .navigation__link {
 	cursor: pointer;
 	display: block;
 	padding: 7px 14px;
+	transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+	&:hover {
+		background-color: $color-1;
+		color: $color-3;
+	}
 
 	&_active {
 		background-color: $color-4;
 	}
 }
-
 
 .navigation__close {
 	display: none;
@@ -53,6 +55,7 @@
 
 	.navigation_active {
 		transform: translateX(0);
+		height: 425px;
 	}
 
 	.navigation__list {

@@ -4,21 +4,17 @@
 	height: 50px;
 }
 
-.header__navigation {
-
-}
-
 .header__hashtag {
 	display: block;
 	padding: 7px 14px;
 	cursor: pointer;
 	margin-right: 70px;
+
+	transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+	&:hover {
+		background-color: $color-1;
+		color: $color-3;
+	}
 }
 
-.header__social {
-
-}
-
-.header__mute {
-
-}

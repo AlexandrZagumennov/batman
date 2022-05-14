@@ -8,14 +8,15 @@
 	}
 }
 
-.social__item {
-
-}
-
 .social__link {
 	display: block;
 	width: 24px;
 	height: 24px;
+	transition: transform .3s ease-in-out;
+
+	&:hover {
+		transform: translateY(-5px);
+	}
 
 	&_fb{
 		@include bg-full('../img/sprite.svg#fb')

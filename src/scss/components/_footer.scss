@@ -6,7 +6,7 @@
 	gap: 6px;
 	position: relative;
 	z-index: 500;
-	height: 70px;
+	height: 50px;
 }
 
 .footer__links {
@@ -17,10 +17,17 @@
 	text-transform: uppercase;
 }
 
+.footer__link {
+	transition: color .3s ease-in-out;
+
+	&:hover {
+		color: $color-4;
+	}
+}
+
 .footer__copywright {
 	color: $color-6;
 }
-
 
 @media (max-width: 768px) {
 	.footer {

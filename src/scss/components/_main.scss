@@ -42,14 +42,17 @@
 	}
 }
 
+.main_slider {
+	height: calc(100% - (50px + 50px));
+	overflow: hidden;
+	padding-bottom: 10px;
+}
 
 @media (max-width: 768px) {
 	.main__logo {
 		width: 230px;
 	}
 
-	.main_slider {
-	}
 }
 
 @media (max-width: 580px) {

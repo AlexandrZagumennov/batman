@@ -4,4 +4,6 @@
 
 .slider-thumbs__img {
 	width: 260px;
+	max-height: 100px;
+	object-fit: cover;
 }

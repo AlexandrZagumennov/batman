@@ -62,7 +62,7 @@ const path = {
 		img: 'src/img/**/*.*',
 		svg: 'src/svg/**/*.svg',
 		imgF: 'src/img/**/*.{jpg,jpeg,png}',
-		assets: ['src/fonts/**/*.*', 'src/video/**/*.*', 'src/photo/**/*.*',]
+		assets: ['src/fonts/**/*.*', 'src/video/**/*.*', 'src/audio/**/*.*', 'src/photo/**/*.*',]
 	},
 	watch: {
 		html: 'src/*.html',
